@@ -43,6 +43,8 @@ int main()
   ddl.reverse();
   ddl.display();
 
+  ddl.clear();
+
   cout << ddl.size() << endl;
 
   return 0;
