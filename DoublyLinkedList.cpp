@@ -39,8 +39,6 @@ int main()
   cout << "Size: " << ddl.size() << endl;
 
   ddl.reverse();
-
-  ddl.display();
   ddl.display();
 
   ddl.reverse();
