@@ -21,6 +21,8 @@ private:
   Node<T> *tail;
 
 public:
+  ~DoublyLinkedList() {}
+
   DoublyLinkedList() : head(nullptr), tail(nullptr), nodes(0) {}
 
   T front()
@@ -203,6 +205,7 @@ public:
     delete trav;
     head = tail = trav = nullptr;
     nodes = 0;
+    cout << "Lista vacia." << endl; // comentario de aviso
   }
 
   // O(n)
@@ -219,7 +222,7 @@ public:
       current = current->prev; // Mover al siguiente nodo
     }
 
-    if (temp != nullptr)     // Si current es nullptr, entonces tail se convierte en el nuevo head y viceversa
+    if (temp != nullptr) // Si current es nullptr, entonces tail se convierte en el nuevo head y viceversa
     {
       head = temp->prev;
     }

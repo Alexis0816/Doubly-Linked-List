@@ -8,6 +8,7 @@ int main()
   ddl.push_back(3);
   cout << "Size: " << ddl.size() << endl;
   ddl.push_back(4);
+  cout << "Size: " << ddl.size() << endl;
   ddl.push_back(5);
   cout << "Size: " << ddl.size() << endl;
   ddl.push_back(6);
@@ -39,11 +40,13 @@ int main()
 
   ddl.reverse();
 
-  ddl.display();  
+  ddl.display();
   ddl.display();
 
-    ddl.reverse();
+  ddl.reverse();
   ddl.display();
+
+  cout << ddl.size() << endl;
 
   return 0;
 }
