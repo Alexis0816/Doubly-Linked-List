@@ -6,7 +6,6 @@ int main()
   ddl.push_back(1);
   ddl.push_back(2);
   ddl.push_back(3);
-  cout << "Size: " << ddl.size() << endl;
   ddl.push_back(4);
   cout << "Size: " << ddl.size() << endl;
   ddl.push_back(5);
